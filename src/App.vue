@@ -1,18 +1,9 @@
-<script lang="ts">
-import { defineComponent } from "vue"
+<script lang="ts" setup>
 import image from "@/assets/logo.png"
-
-export default defineComponent({
-  methods: {
-    getImage() {
-      return image
-    },
-  },
-})
 </script>
 
 <template>
-  <img alt="Vue logo" :src="getImage()" />
+  <img alt="Vue logo" :src="image" />
 </template>
 
 <style>
